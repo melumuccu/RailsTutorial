@@ -1,0 +1,3 @@
+HEROKU_AC_ANALYTICS_DIR=/home/ec2-user/.cache/heroku/autocomplete/completion_analytics;
+HEROKU_AC_COMMANDS_PATH=/home/ec2-user/.cache/heroku/autocomplete/commands;
+HEROKU_AC_BASH_COMPFUNC_PATH=/usr/local/heroku/node_modules/@heroku-cli/plugin-autocomplete/autocomplete/bash/heroku.bash && test -f $HEROKU_AC_BASH_COMPFUNC_PATH && source $HEROKU_AC_BASH_COMPFUNC_PATH;

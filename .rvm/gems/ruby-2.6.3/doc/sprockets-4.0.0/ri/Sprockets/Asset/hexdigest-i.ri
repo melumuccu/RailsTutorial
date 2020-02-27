@@ -1,0 +1,4 @@
+U:RDoc::AnyMethod[iI"hexdigest:ETI"Sprockets::Asset#hexdigest;TF:publico:RDoc::Markup::Document:@parts[o:RDoc::Markup::Paragraph;	[I"0Public: Returns String hexdigest of source.;T:
+@fileI"lib/sprockets/asset.rb;T:0@omit_headings_from_table_of_contents_below000[[I"	etag;To;;	[o;
+;	[I"!Pubic: ETag String of Asset.;T;@;0I"();T@FI"
+Asset;TcRDoc::NormalClass00

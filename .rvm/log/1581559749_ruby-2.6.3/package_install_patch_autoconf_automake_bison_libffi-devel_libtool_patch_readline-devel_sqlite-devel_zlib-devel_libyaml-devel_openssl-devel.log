@@ -1,0 +1,189 @@
+[2020-02-13 02:09:09] requirements_centos_libs_install
+requirements_centos_libs_install () 
+{ 
+    __rvm_try_sudo yum install -y "$@" || return $?
+}
+current path: /home/ec2-user
+PATH=/home/ec2-user/.nvm/versions/node/v10.19.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+command(13): requirements_centos_libs_install patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel
+++ __rvm_try_sudo yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.19.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.19.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/home/ec2-user/.nvm/versions/node/v10.19.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel'\'': ' yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel
+++ command sudo -p '%p password required for '\''yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel'\'': ' yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel
+++ sudo -p '%p password required for '\''yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel'\'': ' yum install -y patch autoconf automake bison libffi-devel libtool patch readline-devel sqlite-devel zlib-devel libyaml-devel openssl-devel
+Loaded plugins: priorities, update-motd, upgrade-helper
+1073 packages excluded due to repository priority protections
+Resolving Dependencies
+--> Running transaction check
+---> Package autoconf.noarch 0:2.69-11.9.amzn1 will be installed
+--> Processing Dependency: m4 >= 1.4.14 for package: autoconf-2.69-11.9.amzn1.noarch
+---> Package automake.noarch 0:1.13.4-3.15.amzn1 will be installed
+--> Processing Dependency: perl(Thread::Queue) for package: automake-1.13.4-3.15.amzn1.noarch
+--> Processing Dependency: perl(TAP::Parser) for package: automake-1.13.4-3.15.amzn1.noarch
+---> Package bison.x86_64 0:2.7-4.11.amzn1 will be installed
+---> Package libffi-devel.x86_64 0:3.0.13-16.5.amzn1 will be installed
+---> Package libtool.x86_64 0:2.4.2-20.4.8.5.32.amzn1 will be installed
+---> Package libyaml-devel.x86_64 0:0.1.6-6.7.amzn1 will be installed
+---> Package openssl-devel.x86_64 1:1.0.2k-16.150.amzn1 will be installed
+--> Processing Dependency: krb5-devel(x86-64) for package: 1:openssl-devel-1.0.2k-16.150.amzn1.x86_64
+---> Package patch.x86_64 0:2.7.1-12.14.amzn1 will be installed
+---> Package readline-devel.x86_64 0:6.2-9.14.amzn1 will be installed
+--> Processing Dependency: ncurses-devel for package: readline-devel-6.2-9.14.amzn1.x86_64
+---> Package sqlite-devel.x86_64 0:3.7.17-8.14.amzn1 will be installed
+---> Package zlib-devel.x86_64 0:1.2.8-7.18.amzn1 will be installed
+--> Running transaction check
+---> Package krb5-devel.x86_64 0:1.15.1-34.44.amzn1 will be installed
+--> Processing Dependency: libkadm5(x86-64) = 1.15.1-34.44.amzn1 for package: krb5-devel-1.15.1-34.44.amzn1.x86_64
+--> Processing Dependency: libverto-devel for package: krb5-devel-1.15.1-34.44.amzn1.x86_64
+--> Processing Dependency: libselinux-devel for package: krb5-devel-1.15.1-34.44.amzn1.x86_64
+--> Processing Dependency: libcom_err-devel for package: krb5-devel-1.15.1-34.44.amzn1.x86_64
+--> Processing Dependency: keyutils-libs-devel for package: krb5-devel-1.15.1-34.44.amzn1.x86_64
+---> Package m4.x86_64 0:1.4.16-9.10.amzn1 will be installed
+---> Package ncurses-devel.x86_64 0:5.7-4.20090207.14.amzn1 will be installed
+---> Package perl-Test-Harness.noarch 0:3.28-3.6.amzn1 will be installed
+---> Package perl-Thread-Queue.noarch 0:3.02-2.5.amzn1 will be installed
+--> Running transaction check
+---> Package keyutils-libs-devel.x86_64 0:1.5.8-3.12.amzn1 will be installed
+---> Package libcom_err-devel.x86_64 0:1.43.5-2.43.amzn1 will be installed
+---> Package libkadm5.x86_64 0:1.15.1-34.44.amzn1 will be installed
+---> Package libselinux-devel.x86_64 0:2.1.10-3.22.amzn1 will be installed
+--> Processing Dependency: libsepol-devel >= 2.1.5-1 for package: libselinux-devel-2.1.10-3.22.amzn1.x86_64
+--> Processing Dependency: pkgconfig(libsepol) for package: libselinux-devel-2.1.10-3.22.amzn1.x86_64
+---> Package libverto-devel.x86_64 0:0.2.5-4.9.amzn1 will be installed
+--> Running transaction check
+---> Package libsepol-devel.x86_64 0:2.1.7-3.12.amzn1 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package               Arch     Version                    Repository      Size
+================================================================================
+Installing:
+ autoconf              noarch   2.69-11.9.amzn1            amzn-main      915 k
+ automake              noarch   1.13.4-3.15.amzn1          amzn-main      718 k
+ bison                 x86_64   2.7-4.11.amzn1             amzn-main      645 k
+ libffi-devel          x86_64   3.0.13-16.5.amzn1          amzn-main       23 k
+ libtool               x86_64   2.4.2-20.4.8.5.32.amzn1    amzn-main      737 k
+ libyaml-devel         x86_64   0.1.6-6.7.amzn1            amzn-main      124 k
+ openssl-devel         x86_64   1:1.0.2k-16.150.amzn1      amzn-updates   1.7 M
+ patch                 x86_64   2.7.1-12.14.amzn1          amzn-updates   115 k
+ readline-devel        x86_64   6.2-9.14.amzn1             amzn-main      141 k
+ sqlite-devel          x86_64   3.7.17-8.14.amzn1          amzn-main      111 k
+ zlib-devel            x86_64   1.2.8-7.18.amzn1           amzn-main       53 k
+Installing for dependencies:
+ keyutils-libs-devel   x86_64   1.5.8-3.12.amzn1           amzn-main       37 k
+ krb5-devel            x86_64   1.15.1-34.44.amzn1         amzn-updates   292 k
+ libcom_err-devel      x86_64   1.43.5-2.43.amzn1          amzn-updates    36 k
+ libkadm5              x86_64   1.15.1-34.44.amzn1         amzn-updates   201 k
+ libselinux-devel      x86_64   2.1.10-3.22.amzn1          amzn-main      157 k
+ libsepol-devel        x86_64   2.1.7-3.12.amzn1           amzn-main       70 k
+ libverto-devel        x86_64   0.2.5-4.9.amzn1            amzn-main       11 k
+ m4                    x86_64   1.4.16-9.10.amzn1          amzn-main      263 k
+ ncurses-devel         x86_64   5.7-4.20090207.14.amzn1    amzn-main      683 k
+ perl-Test-Harness     noarch   3.28-3.6.amzn1             amzn-main      314 k
+ perl-Thread-Queue     noarch   3.02-2.5.amzn1             amzn-main       17 k
+
+Transaction Summary
+================================================================================
+Install  11 Packages (+11 Dependent packages)
+
+Total download size: 7.2 M
+Installed size: 17 M
+Downloading packages:
+--------------------------------------------------------------------------------
+Total                                              7.3 MB/s | 7.2 MB  00:00     
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : m4-1.4.16-9.10.amzn1.x86_64                                 1/22 
+  Installing : autoconf-2.69-11.9.amzn1.noarch                             2/22 
+  Installing : libcom_err-devel-1.43.5-2.43.amzn1.x86_64                   3/22 
+  Installing : libverto-devel-0.2.5-4.9.amzn1.x86_64                       4/22 
+  Installing : libsepol-devel-2.1.7-3.12.amzn1.x86_64                      5/22 
+  Installing : libselinux-devel-2.1.10-3.22.amzn1.x86_64                   6/22 
+  Installing : perl-Thread-Queue-3.02-2.5.amzn1.noarch                     7/22 
+  Installing : libkadm5-1.15.1-34.44.amzn1.x86_64                          8/22 
+  Installing : perl-Test-Harness-3.28-3.6.amzn1.noarch                     9/22 
+  Installing : automake-1.13.4-3.15.amzn1.noarch                          10/22 
+  Installing : zlib-devel-1.2.8-7.18.amzn1.x86_64                         11/22 
+  Installing : keyutils-libs-devel-1.5.8-3.12.amzn1.x86_64                12/22 
+  Installing : krb5-devel-1.15.1-34.44.amzn1.x86_64                       13/22 
+  Installing : ncurses-devel-5.7-4.20090207.14.amzn1.x86_64               14/22 
+  Installing : readline-devel-6.2-9.14.amzn1.x86_64                       15/22 
+  Installing : 1:openssl-devel-1.0.2k-16.150.amzn1.x86_64                 16/22 
+  Installing : libtool-2.4.2-20.4.8.5.32.amzn1.x86_64                     17/22 
+  Installing : bison-2.7-4.11.amzn1.x86_64                                18/22 
+  Installing : libyaml-devel-0.1.6-6.7.amzn1.x86_64                       19/22 
+  Installing : sqlite-devel-3.7.17-8.14.amzn1.x86_64                      20/22 
+  Installing : patch-2.7.1-12.14.amzn1.x86_64                             21/22 
+  Installing : libffi-devel-3.0.13-16.5.amzn1.x86_64                      22/22 
+  Verifying  : automake-1.13.4-3.15.amzn1.noarch                           1/22 
+  Verifying  : readline-devel-6.2-9.14.amzn1.x86_64                        2/22 
+  Verifying  : libselinux-devel-2.1.10-3.22.amzn1.x86_64                   3/22 
+  Verifying  : ncurses-devel-5.7-4.20090207.14.amzn1.x86_64                4/22 
+  Verifying  : m4-1.4.16-9.10.amzn1.x86_64                                 5/22 
+  Verifying  : keyutils-libs-devel-1.5.8-3.12.amzn1.x86_64                 6/22 
+  Verifying  : zlib-devel-1.2.8-7.18.amzn1.x86_64                          7/22 
+  Verifying  : perl-Test-Harness-3.28-3.6.amzn1.noarch                     8/22 
+  Verifying  : libffi-devel-3.0.13-16.5.amzn1.x86_64                       9/22 
+  Verifying  : krb5-devel-1.15.1-34.44.amzn1.x86_64                       10/22 
+  Verifying  : libkadm5-1.15.1-34.44.amzn1.x86_64                         11/22 
+  Verifying  : perl-Thread-Queue-3.02-2.5.amzn1.noarch                    12/22 
+  Verifying  : bison-2.7-4.11.amzn1.x86_64                                13/22 
+  Verifying  : 1:openssl-devel-1.0.2k-16.150.amzn1.x86_64                 14/22 
+  Verifying  : patch-2.7.1-12.14.amzn1.x86_64                             15/22 
+  Verifying  : sqlite-devel-3.7.17-8.14.amzn1.x86_64                      16/22 
+  Verifying  : libtool-2.4.2-20.4.8.5.32.amzn1.x86_64                     17/22 
+  Verifying  : libsepol-devel-2.1.7-3.12.amzn1.x86_64                     18/22 
+  Verifying  : libverto-devel-0.2.5-4.9.amzn1.x86_64                      19/22 
+  Verifying  : autoconf-2.69-11.9.amzn1.noarch                            20/22 
+  Verifying  : libcom_err-devel-1.43.5-2.43.amzn1.x86_64                  21/22 
+  Verifying  : libyaml-devel-0.1.6-6.7.amzn1.x86_64                       22/22 
+
+Installed:
+  autoconf.noarch 0:2.69-11.9.amzn1                                             
+  automake.noarch 0:1.13.4-3.15.amzn1                                           
+  bison.x86_64 0:2.7-4.11.amzn1                                                 
+  libffi-devel.x86_64 0:3.0.13-16.5.amzn1                                       
+  libtool.x86_64 0:2.4.2-20.4.8.5.32.amzn1                                      
+  libyaml-devel.x86_64 0:0.1.6-6.7.amzn1                                        
+  openssl-devel.x86_64 1:1.0.2k-16.150.amzn1                                    
+  patch.x86_64 0:2.7.1-12.14.amzn1                                              
+  readline-devel.x86_64 0:6.2-9.14.amzn1                                        
+  sqlite-devel.x86_64 0:3.7.17-8.14.amzn1                                       
+  zlib-devel.x86_64 0:1.2.8-7.18.amzn1                                          
+
+Dependency Installed:
+  keyutils-libs-devel.x86_64 0:1.5.8-3.12.amzn1                                 
+  krb5-devel.x86_64 0:1.15.1-34.44.amzn1                                        
+  libcom_err-devel.x86_64 0:1.43.5-2.43.amzn1                                   
+  libkadm5.x86_64 0:1.15.1-34.44.amzn1                                          
+  libselinux-devel.x86_64 0:2.1.10-3.22.amzn1                                   
+  libsepol-devel.x86_64 0:2.1.7-3.12.amzn1                                      
+  libverto-devel.x86_64 0:0.2.5-4.9.amzn1                                       
+  m4.x86_64 0:1.4.16-9.10.amzn1                                                 
+  ncurses-devel.x86_64 0:5.7-4.20090207.14.amzn1                                
+  perl-Test-Harness.noarch 0:3.28-3.6.amzn1                                     
+  perl-Thread-Queue.noarch 0:3.02-2.5.amzn1                                     
+
+Complete!

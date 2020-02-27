@@ -1,0 +1,13 @@
+---
+6.0.0.beta1 actionpack:= 6.0.0.beta1,activerecord:= 6.0.0.beta1,activestorage:= 6.0.0.beta1,activesupport:= 6.0.0.beta1,nokogiri:>= 1.8.5|checksum:ef1ee0e8ea2c93ced45047b4804505a8c00644119a39ebe49f00a0b25d65bbf9,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.0.beta2 actionpack:= 6.0.0.beta2,activerecord:= 6.0.0.beta2,activestorage:= 6.0.0.beta2,activesupport:= 6.0.0.beta2,nokogiri:>= 1.8.5|checksum:ef9108bf11644a1d5d0d90fe352bacd0ce2ff6b50698e6565424570caa8bc892,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.0.beta3 actionpack:= 6.0.0.beta3,activerecord:= 6.0.0.beta3,activestorage:= 6.0.0.beta3,activesupport:= 6.0.0.beta3,nokogiri:>= 1.8.5|checksum:faf1f28e70a9faf04ac2077fb4e2f518ac76a29e8e1c487f3d9658118553eaf0,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.0.rc1 actionpack:= 6.0.0.rc1,activerecord:= 6.0.0.rc1,activestorage:= 6.0.0.rc1,activesupport:= 6.0.0.rc1,nokogiri:>= 1.8.5|checksum:148fcd440a66f732ad1606aaeafc7298ee3cca807d79d755d73d8d10cba792fe,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.0.rc2 actionpack:= 6.0.0.rc2,activerecord:= 6.0.0.rc2,activestorage:= 6.0.0.rc2,activesupport:= 6.0.0.rc2,nokogiri:>= 1.8.5|checksum:e032f30ca3069382464fe0ec0b63a42be64ba6a45afcace7260bb3addb0927e2,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.0 actionpack:= 6.0.0,activerecord:= 6.0.0,activestorage:= 6.0.0,activesupport:= 6.0.0,nokogiri:>= 1.8.5|checksum:5a83c9e5a35d288d264a3a623c1114ee7f0cf4408180e21df3b66db528ba8246,ruby:>= 2.5.0
+6.0.1.rc1 actionpack:= 6.0.1.rc1,activerecord:= 6.0.1.rc1,activestorage:= 6.0.1.rc1,activesupport:= 6.0.1.rc1,nokogiri:>= 1.8.5|checksum:3e410969cad6acc26604e59fe2857ed8b251418f8446e4fafcecad6306f526b0,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.1 actionpack:= 6.0.1,activerecord:= 6.0.1,activestorage:= 6.0.1,activesupport:= 6.0.1,nokogiri:>= 1.8.5|checksum:7ea35140009b63907daad9818e5ae08f84b7ce5f4674a3826ca1dd8544003a67,ruby:>= 2.5.0
+6.0.2.rc1 actionpack:= 6.0.2.rc1,activerecord:= 6.0.2.rc1,activestorage:= 6.0.2.rc1,activesupport:= 6.0.2.rc1,nokogiri:>= 1.8.5|checksum:4fa0062cdc66ca2fa30d28d1681b22fa245cbd4fe1cc7219573bc790131f3f95,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.2.rc2 actionpack:= 6.0.2.rc2,activerecord:= 6.0.2.rc2,activestorage:= 6.0.2.rc2,activesupport:= 6.0.2.rc2,nokogiri:>= 1.8.5|checksum:a6246e525e110de4bea18e82da4d3b7538fdc308949dde250df986175b911d8e,ruby:>= 2.5.0,rubygems:> 1.3.1
+6.0.2 actionpack:= 6.0.2,activerecord:= 6.0.2,activestorage:= 6.0.2,activesupport:= 6.0.2,nokogiri:>= 1.8.5|checksum:1871a9fe66fa1edf6d46203c208dbe7048ce38ff13b483542e839376bd1f9ca9,ruby:>= 2.5.0
+6.0.2.1 actionpack:= 6.0.2.1,activerecord:= 6.0.2.1,activestorage:= 6.0.2.1,activesupport:= 6.0.2.1,nokogiri:>= 1.8.5|checksum:7857e4f1242ca2064d0b24154fb1d2d05537e24ec78b31ccd51eab7549459c09,ruby:>= 2.5.0

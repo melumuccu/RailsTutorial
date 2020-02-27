@@ -1,0 +1,6 @@
+first_user = User.first
+first_user.microposts
+first_user.microposts
+exit
+first_user = User.first
+first_user.microposts

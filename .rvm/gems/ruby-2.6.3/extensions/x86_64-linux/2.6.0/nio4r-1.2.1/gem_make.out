@@ -1,0 +1,285 @@
+current directory: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/nio4r-1.2.1/ext/nio4r
+/home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby -I /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/site_ruby/2.6.0 -r ./siteconf20200213-10057-1kfcvqi.rb extconf.rb
+checking for unistd.h... yes
+checking for rb_thread_blocking_region()... no
+checking for rb_thread_call_without_gvl()... yes
+checking for sys/select.h... yes
+checking for poll.h... yes
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for port.h... no
+checking for sys/resource.h... yes
+creating Makefile
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR="
+compiling monitor.c
+monitor.c: In function ‘NIO_Monitor_initialize’:
+monitor.c:103:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ev_io_init(&monitor->ev_io, NIO_Selector_monitor_callback, FPTR_TO_FD(fptr), monitor->interests);
+     ^
+monitor.c:103:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c:103:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c:103:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+monitor.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-cast-function-type" [enabled by default]
+compiling nio4r_ext.c
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c:487:48: warning: "/*" within comment [-Wcomment]
+ /*#define MIN_INTERVAL  0.00000095367431640625 /* 1/2**20, good till 2200 */
+ ^
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c: In function ‘ecb_binary32_to_binary16’:
+../libev/ev.c:1273:13: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (e < (14 - 24)) /* might not be sharp, but is good enough */
+             ^
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c: At top level:
+../libev/ev.c:1829:31: warning: ‘ev_default_loop_ptr’ initialized and declared ‘extern’ [enabled by default]
+   EV_API_DECL struct ev_loop *ev_default_loop_ptr = 0; /* needs to be initialised to make it a definition despite extern */
+                               ^
+../libev/ev.c: In function ‘ev_time’:
+../libev/ev.c:1869:3: warning: ISO C90 forbids mixed declarations and code [-Wdeclaration-after-statement]
+   struct timeval tv;
+   ^
+../libev/ev.c: In function ‘array_nextsize’:
+../libev/ev.c:1938:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (elem * ncur > MALLOC_ROUND - sizeof (void *) * 4)
+                   ^
+../libev/ev.c: In function ‘evpipe_init’:
+../libev/ev.c:2388:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (!ev_is_active (&pipe_w))
+   ^
+In file included from ../libev/ev.c:2691:0,
+                 from nio4r_ext.c:7:
+../libev/ev_epoll.c: At top level:
+../libev/ev_epoll.c:238:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ int inline_size
+ ^
+../libev/ev_epoll.c:238:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev_epoll.c:263:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ void inline_size
+ ^
+../libev/ev_epoll.c:263:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev_epoll.c:270:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ void inline_size
+ ^
+../libev/ev_epoll.c:270:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+In file included from ../libev/ev.c:2694:0,
+                 from nio4r_ext.c:7:
+../libev/ev_poll.c:42:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ void inline_size
+ ^
+../libev/ev_poll.c:42:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev_poll.c:129:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ int inline_size
+ ^
+../libev/ev_poll.c:129:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev_poll.c:142:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ void inline_size
+ ^
+../libev/ev_poll.c:142:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+In file included from ../libev/ev.c:2697:0,
+                 from nio4r_ext.c:7:
+../libev/ev_select.c:274:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ int inline_size
+ ^
+../libev/ev_select.c:274:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev_select.c:303:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ void inline_size
+ ^
+../libev/ev_select.c:303:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+In file included from nio4r_ext.c:7:0:
+../libev/ev.c:2713:1: warning: ‘static’ is not at beginning of declaration [-Wold-style-declaration]
+ int inline_size ecb_cold
+ ^
+../libev/ev.c:2713:1: warning: ‘__inline__’ is not at beginning of declaration [-Wold-style-declaration]
+../libev/ev.c: In function ‘loop_init’:
+../libev/ev.c:2917:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_prepare_init (&pending_w, pendingcb);
+       ^
+../libev/ev.c:2917:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2917:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2917:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2920:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_init (&pipe_w, pipecb);
+       ^
+../libev/ev.c:2920:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2920:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2920:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:2921:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_set_priority (&pipe_w, EV_MAXPRI);
+       ^
+../libev/ev.c: In function ‘ev_loop_destroy’:
+../libev/ev.c:2948:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_default_loop (EV_A) && ev_is_active (&childev))
+   ^
+../libev/ev.c:2955:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&pipe_w))
+   ^
+../libev/ev.c:2965:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&sigfd_w))
+   ^
+../libev/ev.c: In function ‘loop_fork’:
+../libev/ev.c:3058:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&pipe_w) && postfork != 2)
+   ^
+../libev/ev.c: In function ‘ev_default_loop’:
+../libev/ev.c:3239:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+           ev_signal_init (&childev, childcb, SIGCHLD);
+           ^
+../libev/ev.c:3239:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:3239:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:3239:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:3240:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+           ev_set_priority (&childev, EV_MAXPRI);
+           ^
+../libev/ev.c: In function ‘ev_backend_poll’:
+../libev/ev.c:3551:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../libev/ev.c: In function ‘ev_run’:
+../libev/ev.c:3737:9: warning: implicit declaration of function ‘rb_thread_call_without_gvl’ [-Wimplicit-function-declaration]
+         rb_thread_call_without_gvl(ev_backend_poll, (void *)&poll_args, RUBY_UBF_IO, 0);
+         ^
+../libev/ev.c:3752:13: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+             assert (("libev: pipe_w not active, but pipe not written", ev_is_active (&pipe_w)));
+             ^
+../libev/ev.c: In function ‘ev_io_start’:
+../libev/ev.c:3938:34: warning: suggest parentheses around arithmetic in operand of ‘|’ [-Wparentheses]
+   fd_change (EV_A_ fd, w->events & EV__IOFDSET | EV_ANFD_REIFY);
+                                  ^
+../libev/ev.c: In function ‘ev_signal_start’:
+../libev/ev.c:4155:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+           ev_io_init (&sigfd_w, sigfdcb, sigfd, EV_READ);
+           ^
+../libev/ev.c:4155:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4155:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4155:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4156:11: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+           ev_set_priority (&sigfd_w, EV_MAXPRI);
+           ^
+../libev/ev.c: In function ‘infy_add’:
+../libev/ev.c:4368:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&w->timer)) ev_ref (EV_A);
+   ^
+../libev/ev.c:4370:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&w->timer)) ev_unref (EV_A);
+   ^
+../libev/ev.c: In function ‘infy_init’:
+../libev/ev.c:4474:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_io_init (&fs_w, infy_cb, fs_fd, EV_READ);
+       ^
+../libev/ev.c:4474:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4474:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4474:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4475:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_set_priority (&fs_w, EV_MAXPRI);
+       ^
+../libev/ev.c: In function ‘infy_fork’:
+../libev/ev.c:4519:15: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+               if (ev_is_active (&w->timer)) ev_ref (EV_A);
+               ^
+../libev/ev.c:4521:15: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+               if (ev_is_active (&w->timer)) ev_unref (EV_A);
+               ^
+../libev/ev.c: In function ‘ev_stat_start’:
+../libev/ev.c:4595:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_timer_init (&w->timer, stat_timer_cb, 0., w->interval ? w->interval : DEF_STAT_INTERVAL);
+   ^
+../libev/ev.c:4595:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4595:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4595:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4595:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4596:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_set_priority (&w->timer, ev_priority (w));
+   ^
+../libev/ev.c: In function ‘ev_stat_stop’:
+../libev/ev.c:4628:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   if (ev_is_active (&w->timer))
+   ^
+../libev/ev.c: In function ‘ev_embed_start’:
+../libev/ev.c:4831:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ev_io_init (&w->io, embed_io_cb, backend_fd, EV_READ);
+     ^
+../libev/ev.c:4831:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4831:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4831:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4836:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_set_priority (&w->io, ev_priority (w));
+   ^
+../libev/ev.c:4839:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_prepare_init (&w->prepare, embed_prepare_cb);
+   ^
+../libev/ev.c:4839:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4839:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4839:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4840:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_set_priority (&w->prepare, EV_MINPRI);
+   ^
+../libev/ev.c:4843:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_fork_init (&w->fork, embed_fork_cb);
+   ^
+../libev/ev.c:4843:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4843:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:4843:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c: In function ‘ev_once’:
+../libev/ev.c:5053:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_init (&once->io, once_cb_io);
+   ^
+../libev/ev.c:5053:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5053:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5053:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5060:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+   ev_init (&once->to, once_cb_to);
+   ^
+../libev/ev.c:5060:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5060:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5060:3: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+../libev/ev.c:5063:7: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+       ev_timer_set (&once->to, timeout, 0.);
+       ^
+../libev/ev.c: At top level:
+../libev/ev.c:5179:27: warning: "/*" within comment [-Wcomment]
+ /* EV_STAT     0x00001000 /* stat data changed */
+ ^
+../libev/ev.c:5180:27: warning: "/*" within comment [-Wcomment]
+ /* EV_EMBED    0x00010000 /* embedded event loop needs sweep */
+ ^
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-cast-function-type" [enabled by default]
+compiling selector.c
+selector.c: In function ‘NIO_Selector_allocate’:
+selector.c:102:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ev_init(&selector->timer, NIO_Selector_timeout_callback);
+     ^
+selector.c:102:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:102:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:102:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+     ev_io_init(&selector->wakeup, NIO_Selector_wakeup_callback, selector->wakeup_reader, EV_READ);
+     ^
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c:107:5: warning: dereferencing type-punned pointer will break strict-aliasing rules [-Wstrict-aliasing]
+selector.c: At top level:
+cc1: warning: unrecognized command line option "-Wno-tautological-compare" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-self-assign" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-parentheses-equality" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-constant-logical-operand" [enabled by default]
+cc1: warning: unrecognized command line option "-Wno-cast-function-type" [enabled by default]
+linking shared-object nio4r_ext.so
+
+current directory: /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/nio4r-1.2.1/ext/nio4r
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nio4r_ext.so ./.gem.20200213-10057-xc9tx

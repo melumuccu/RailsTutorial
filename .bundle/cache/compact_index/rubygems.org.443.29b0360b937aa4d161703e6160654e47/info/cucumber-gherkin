@@ -1,0 +1,4 @@
+---
+9.1.0 cucumber-messages:>= 9.0.3&~> 9.0|checksum:43d8f0f0eebcc76fa9f853d4c5df87fd38afdb160870c3f2f14528441b035b5e,ruby:>= 2.3
+9.2.0 cucumber-messages:>= 9.0.3&~> 9.0|checksum:ce17cd465b25b0e2a625954dd1cd9d22c4c7ec9eef8c36440d6e7a36cecc1243,ruby:>= 2.3
+10.0.0 cucumber-messages:>= 10.0.1&~> 10.0|checksum:d1e65cfb05ea61db26cd9965f83a70328d346dd8f36866f07b9b2c89948f39ae,ruby:>= 2.3

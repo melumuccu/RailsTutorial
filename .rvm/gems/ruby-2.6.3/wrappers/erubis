@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/ec2-user/.rvm/gems/ruby-2.6.3/environment" ]]
+then
+  source "/home/ec2-user/.rvm/gems/ruby-2.6.3/environment"
+  exec erubis "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/ec2-user/.rvm/gems/ruby-2.6.3/environment'" >&2
+  exit 1
+fi

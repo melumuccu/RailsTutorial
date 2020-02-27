@@ -1,0 +1,29 @@
+[2020-02-13 02:11:55] __rvm_set_executable
+__rvm_set_executable () 
+{ 
+    for __file in "$@";
+    do
+        [[ -x "${__file}" ]] || chmod +x "${__file}";
+    done
+}
+current path: /home/ec2-user/.rvm/src/ruby-2.6.3
+PATH=/home/ec2-user/.nvm/versions/node/v10.19.0/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/opt/aws/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin:/home/ec2-user/.rvm/bin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+command(10): __rvm_set_executable /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/bundle /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/bundler /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/erb /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/gem /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/irb /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/rake /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/rdoc /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ri /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/bundle ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/bundler ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/erb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/gem ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/irb ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/rake ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/rdoc ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ri ]]
+++ for __file in '"$@"'
+++ [[ -x /home/ec2-user/.rvm/rubies/ruby-2.6.3/bin/ruby ]]
